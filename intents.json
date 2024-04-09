@@ -1,0 +1,52 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["My pleasure", "You're Welcome"],
+            "context": [""]
+        },
+        {
+            "tag": "query",
+            "patterns": ["Who is Himanshu?", "Can you tell me about Himanshu?", "What do you know about Himanshu?", "Who exactly is Himanshu?", "Could you provide information on Himanshu?", "I'm curious, who is Himanshu?", "Do you have any details about Himanshu?", "I'm looking to learn more about Himanshu, can you help?", "Is there anything you can tell me about Himanshu?", "I'm interested in knowing about a person named Himanshu. What can you tell me?", "Could you give me a rundown on Himanshu?"],
+            "responses": ["Himanshu is the student of Narula Institute of Technology pursuing his B.Tech in Information Technology"],
+            "context": [""]
+        },
+        {
+            "tag": "time",
+            "patterns": ["What time is it?", "Can you tell me the time?", "What's the current time?"],
+            "responses": ["Sure! The current time is [current time]."],
+            "context": [""]
+        },
+        {
+            "tag": "weather",
+            "patterns": ["What's the weather like?", "Is it going to rain today?", "How's the weather?"],
+            "responses": ["I can check the weather for you. Please provide your location."],
+            "context": ["get_weather"]
+        },
+        {
+            "tag": "get_weather",
+            "patterns": ["In [location]", "At [location]"],
+            "responses": ["The weather in [location] is [weather_condition]."],
+            "context": [""]
+        },
+        {
+            "tag": "joke",
+            "patterns": ["Tell me a joke", "Do you know any jokes?", "Make me laugh"],
+            "responses": ["Why don't scientists trust atoms? Because they make up everything!", "What do you call fake spaghetti? An impasta!", "Why did the scarecrow win an award? Because he was outstanding in his field!"],
+            "context": [""]
+        }
+    ]
+}
